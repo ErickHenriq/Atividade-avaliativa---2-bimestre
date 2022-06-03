@@ -123,4 +123,42 @@ function ex_06() {
         resultado= "Não divisivel por Dois ou  Sete";
     
     }
-document.getElementById('resultado').innerHTML = `${n1} ${resultado}`}
+document.getElementById('resultado').innerHTML = `${n1} ${resultado}`
+}
+
+function ex_07(){
+    
+    var numero = Number(prompt("Digite um numero de 1 até 7"));
+    var resultado;
+    var dia_semana = numero
+
+    switch(dia_semana){
+        case 1: resultado = "Domingo";
+        break;
+
+        case 2: resultado = "Segunda-feira";
+        break;
+
+        case 3: resultado = "Terça-feira";
+        break;
+
+        case 4: resultado = "Quarta-feira";
+        break;
+        
+        case 5: resultado = "Quinta-feira";
+        break;
+        
+        case 6: resultado = "Sexta-feira";
+        break;
+
+        case 7: resultado = "Sábado";
+        break;
+
+        default: resultado = "Dia Invalido";
+        break;
+        }
+
+
+    document.getElementById("resultado").innerHTML = ` Você Digitou ${dia_semana} ,Corresponde ao dia da semana : ${resultado}`;
+
+}
