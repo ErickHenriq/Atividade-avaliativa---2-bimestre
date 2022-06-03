@@ -160,5 +160,19 @@ function ex_07(){
 
 
     document.getElementById("resultado").innerHTML = ` Você Digitou ${dia_semana} ,Corresponde ao dia da semana : ${resultado}`;
+}
 
+function ex_08(){
+    
+    var n1, soma;
+    soma = 0;
+     for( n1= 1; n1 <= 20 ;n1++){
+         if( n1 % 2 == 0){
+            soma+=n1
+         }
+         
+     }
+    //window.alert("o Resultado é :"+ soma);
+
+    document.getElementById("resultado").innerHTML= `A Soma entre todos os Numeros Pares Entre 1 e 20 o resultado é ${soma}.`
 }
