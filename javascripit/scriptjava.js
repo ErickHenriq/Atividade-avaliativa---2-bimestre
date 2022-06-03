@@ -1,3 +1,4 @@
+
 function ex_01() {
     var n1, n2, maior, menor;
     var n1 = Number(prompt("Escreva um numero Inteiro"));
@@ -14,6 +15,7 @@ function ex_01() {
 
     document.getElementById('resultado').innerHTML = `Resultado é ${menor},${maior}.`
 }
+
 function ex_02() {
     var altura, genero, peso_ideal;
     var altura = Number(prompt("Qual Sua Altura ?"));
@@ -70,6 +72,7 @@ function ex_03() {
             }
     document.getElementById('resultado').innerHTML = `o menor valor é : ${menor}.`
 }   
+
 function ex_04() {
     var n1 = prompt("Digite um numero");
     if(n1>0){
@@ -86,6 +89,7 @@ function ex_04() {
 
     document.getElementById('resultado').innerHTML = `o valor inserido é : ${total}.`
 }  
+
 function ex_05() {
     var n1,n2,n3,resultado;
     var n1 = prompt("Digite um numero");
@@ -104,4 +108,19 @@ function ex_05() {
         resultado2= "Não divisivel por Três";
     
     } 
-document.getElementById('resultado').innerHTML = `${n1} ${resultado} | ${n1} ${resultado2}.`}
+document.getElementById('resultado').innerHTML = `${n1} ${resultado} | ${n1} ${resultado2}.`
+}
+
+function ex_06() {
+    var n1,n2,n3,resultado;
+    var n1 = prompt("Digite um numero");
+    var n2 = 2;
+    var n3 = 7;
+
+    if ((n1 % n2) == 0 ||(n1 % n3) == 0 ) {
+        resultado= "É divisivel por Dois  ou Sete ";
+    }else {
+        resultado= "Não divisivel por Dois ou  Sete";
+    
+    }
+document.getElementById('resultado').innerHTML = `${n1} ${resultado}`}
