@@ -71,30 +71,37 @@ function ex_03() {
     document.getElementById('resultado').innerHTML = `o menor valor é : ${menor}.`
 }   
 function ex_04() {
-    /*var n1;
-    var n1 = Number(prompt("Escreva um numero Inteiro"));    
-    var total=n1/2;
+    var n1 = prompt("Digite um numero");
+    if(n1>0){
+    var total = n1/2;
 
-    if(n1/2 == 0){
-        total="Par";
-    }
-    if(n1/2 == 1){
-        total="Impar";
-    }
-
-    document.getElementById('resultado').innerHTML = `o valor inserido é : ${total}.`*/
-    var n = prompt("Digite um numero");
-    if(n>0){
-    var total = n/2;
-
-    if(n & 1){
+    if(n1 & 1){
         alert("Impar");
     } else {
         alert("Par");
     }}
     else{
-    var total = n
+    var total = n1
     }
 
     document.getElementById('resultado').innerHTML = `o valor inserido é : ${total}.`
-}    
+}  
+function ex_05() {
+    var n1,n2,n3,resultado;
+    var n1 = prompt("Digite um numero");
+    var n2 = 2;
+    var n3 = 3;
+
+    if ((n1 % n2) == 0) {
+        resultado= "É divisivel por Dois";
+    }else {
+        resultado= "Não divisivel por Dois";
+    
+    }  
+    if ((n1 % n3) == 0) {
+        resultado2= "É divisivel por Três";
+    }else {
+        resultado2= "Não divisivel por Três";
+    
+    } 
+document.getElementById('resultado').innerHTML = `${n1} ${resultado} | ${n1} ${resultado2}.`}
