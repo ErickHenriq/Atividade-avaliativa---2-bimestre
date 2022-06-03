@@ -69,4 +69,32 @@ function ex_03() {
                 }
             }
     document.getElementById('resultado').innerHTML = `o menor valor é : ${menor}.`
+}   
+function ex_04() {
+    /*var n1;
+    var n1 = Number(prompt("Escreva um numero Inteiro"));    
+    var total=n1/2;
+
+    if(n1/2 == 0){
+        total="Par";
+    }
+    if(n1/2 == 1){
+        total="Impar";
+    }
+
+    document.getElementById('resultado').innerHTML = `o valor inserido é : ${total}.`*/
+    var n = prompt("Digite um numero");
+    if(n>0){
+    var total = n/2;
+
+    if(n & 1){
+        alert("Impar");
+    } else {
+        alert("Par");
+    }}
+    else{
+    var total = n
+    }
+
+    document.getElementById('resultado').innerHTML = `o valor inserido é : ${total}.`
 }    
