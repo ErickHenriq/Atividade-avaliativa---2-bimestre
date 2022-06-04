@@ -179,6 +179,7 @@ function ex_08() {
 
     document.getElementById("resultado").innerHTML = `A Soma entre todos os Numeros Pares Entre 1 e 20 o resultado é ${soma}.`
 }
+
 function ex_09() {
     var n = prompt("Digite um numero");
     var n, n1, n2, n3, n4, n5, n6, n7, n8, n9, n10;
@@ -203,4 +204,15 @@ function ex_09() {
     , ${n} x 8= ${n8}
     , ${n} x 9= ${n9}
     , ${n} x 10= ${n10}`;
+}
+function ex_10() {
+    var n1 = prompt("Digite um numero");
+    var total = n1;
+    if(n1 ==0 ){ total= 1}
+    else{
+    for (var i = 1; i < n1; i++) {
+        total *= i;
+    }}
+
+    document.getElementById("resultado").innerHTML = `${total}`;
 }
